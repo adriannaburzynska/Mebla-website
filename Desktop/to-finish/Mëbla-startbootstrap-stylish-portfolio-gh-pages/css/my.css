@@ -1,0 +1,294 @@
+/* 
+   light purple: #8A93FF; light green: #00B7A2;
+   dark purple: #6069d9; dark green: #14a292;
+   blue: #067BC2;
+   yellow: #ECC30B;
+   orange: #F37748;
+   red: #D56062; 
+*/
+
+*:hover {
+   transition: all 0.3s ease-in-out;
+   text-decoration: none !important;
+}
+
+*::selection {
+   background-color: lightgrey;
+   color: #fff;
+   font-weight: 700;
+}
+
+/* Menu section */
+
+.sidebar-brand a:hover {
+   font-size: 1rem;
+}
+
+/* Header section */
+
+/*
+#logo {
+   position: absolute;
+   left: 45px;
+   top: 35px;
+   transform: rotate(45deg);
+   width: 140px;
+   height: 50px;
+   text-align: center;
+   color: #e8e8e8;
+   line-height: 50px;
+   z-index: 999;
+   font-size: 3rem;
+   transition: color .1s;
+}
+
+#logo:hover {
+   color: white;
+} 
+*/
+
+#title span:nth-child(2):hover{
+   color: transparent;
+}
+
+/* About section */
+
+#about {
+   padding-top: 20rem;
+   padding-bottom: 20rem;
+   background-color: #EDF0F2 !important;
+}
+
+#about h2::first-letter {
+   color: #FFD866;
+   font-size: 175%;
+}
+
+/* Skills section */
+
+.col-lg-3.col-md-6:nth-child(-n+4) {
+   margin-bottom: 3rem;
+}
+
+#services span {
+   border: #72676C solid 1.5px;
+}
+
+/* TEST Skills section */
+
+div.card-body {
+   background-color: #554a4f;
+}
+
+.card-header {
+   background-color: #72676C;
+}
+
+div.card-body,
+div.card,
+.card-header:first-child {
+   border: none;
+   border-radius: 0;
+}
+
+div.card-body p {
+   display: block;
+}
+
+#services img {
+   font-weight: 700;
+   margin-top: 1.5rem;
+}
+
+.accordion {
+   width: 100%;
+}
+
+div.col-lg-3.col-md-6.mb-5.mb-md-0 {
+   display: inline-block !important;
+   width: 230px !important;
+}
+
+#accordionExample img {
+   object-fit: cover;
+}
+
+.focusC {
+   object-position: 20% 10%;
+}
+
+.focusL {
+   object-position: 90% 50%;
+}
+
+.focusB {
+   object-position: 40% 120%;
+}
+
+.card-body.text-faded.mb-0 p {
+   padding: 5px !important;
+}
+
+.card-body.text-faded.mb-0 p:last-child {
+   margin-bottom: 0 !important;
+}
+
+/*Callout section*/
+
+.callout h2 {
+   max-width: 40rem;
+}
+
+/* Projects section */
+
+.trim {
+   max-height: 740.5px;
+   max-width: 555px;
+   transform: translate(0%, 0%);
+}
+
+section.content-section div.container div.row.no-gutters {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(555px, 1fr));
+   grid-auto-rows: 370.25px;
+   grid-auto-flow: dense;
+}
+
+.horizontal {
+   grid-column: span 2;
+}
+
+.vertical {
+   grid-row: span 2;
+}
+
+.big {
+   grid-column: span 2;
+   grid-row: span 2;
+}
+
+.small {
+   grid-column: span 1;
+   grid-row: span 1;
+}
+
+/* Contact section */
+
+#contact * {
+   text-shadow: 0px 0px 1px rgba(65, 61, 61, 0.1);
+}
+
+#contact hr {
+   width: 25%;
+}
+
+#contact i {
+   font-size: 2.7rem;
+   display: block;
+}
+
+#contact a {
+   color: white;
+}
+
+#contact button {
+   border: 0;
+   outline: 0;
+}
+
+.btn-none {
+   color: white;
+   background-color: transparent;
+}
+
+.bs-tooltip-bottom {
+   margin-top: 10px;
+}
+
+/* Footer */
+
+footer div.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+   /*to take the copyright out of the flow*/
+   position: relative;
+}
+
+footer ul.list-inline.mb-5 {
+   margin-bottom: 0 !important;
+}
+
+footer div.container p {
+   position: absolute;
+   right: -80px;
+}
+
+/* Modal */
+
+#exampleModal,
+#confirmModal {
+   margin-top: 2rem;
+}
+
+.modal-backdrop {
+   opacity: 0;
+   transition: opacity .2s;
+}
+
+.modal-backdrop.in {
+   opacity: .75;
+}
+
+/*fix misbehaving*/
+body.modal-open,
+body {
+   padding-right: 0 !important;
+   overflow-y: scroll;
+}
+
+/*CSS3 Animations */
+
+/*#services span {
+ animation: spin 3s linear infinite;
+ animation-play-state: paused;
+}
+
+#services span:hover {
+   animation-play-state: running;
+}
+*/
+
+.paused {
+   animation-play-state: paused;
+}
+
+.services-animation {
+   animation: spin 3s linear infinite;
+}
+
+.running {
+   animation-play-state: running;
+}
+
+@keyframes spin {
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+body {
+   animation: fadein 2s;
+}
+
+@keyframes fadein {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
